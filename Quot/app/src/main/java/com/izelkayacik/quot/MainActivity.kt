@@ -4,8 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,8 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         if (intent?.action == Intent.ACTION_SEND && intent?.type == "text/plain"){
             intent.getStringExtra(Intent.EXTRA_TEXT)?.let {
-                findViewById<TextView>(R.id.textView).text = it.split("\\n[\\r]?".toRegex())[0]
+
             }
         }
     }
+
 }
