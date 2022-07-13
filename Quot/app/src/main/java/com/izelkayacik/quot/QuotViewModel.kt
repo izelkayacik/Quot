@@ -4,9 +4,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class QuotViewModel : ViewModel(){
-    val state = MutableLiveData(
-        QuotState(
+    val state = MutableLiveData(QuoteState())
 
-        )
-    )
+    fun onIntentWithTextExtra(textExtra: String) {
+        state.update {
+            copy(quote = textExtra)
+        }
+
+        state()
+    }
 }

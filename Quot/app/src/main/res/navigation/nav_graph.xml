@@ -9,9 +9,6 @@
         android:id="@+id/infoFragment"
         android:name="com.izelkayacik.quot.InfoFragment"
         android:label="InfoFragment"
-        tools:layout="@layout/fragment_info">
-        <argument
-            android:name="quote"
-            app:argType="string" />
-    </fragment>
+        tools:layout="@layout/fragment_info"/>
+
 </navigation>
