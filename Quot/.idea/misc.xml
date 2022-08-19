@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/iztuka/AndroidStudioProjects/Quot/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/drawable-v24/gradient_2.xml" value="0.2703125" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/drawable/gradient_1.xml" value="0.13055555555555556" />
         <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/fragment_info.xml" value="0.264" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/fragment_info.xml" value="0.1" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/fragment_template.xml" value="0.1" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/item_template.xml" value="0.1" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/template_1.xml" value="0.1" />
+        <entry key="..\:/Users/iztuka/Documents/GitHub/Quot/Quot/app/src/main/res/layout/template_2.xml" value="0.1" />
       </map>
     </option>
   </component>

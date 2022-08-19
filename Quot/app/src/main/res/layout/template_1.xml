@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_1"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:text="@{viewModel.quote}"
+            android:fontFamily="@font/bitter_regular"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged."/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:id="@+id/authorCommaBookText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bitter_regular"
+            android:text="@{viewModel.authorCommaBook}"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quoteText"
+            tools:text="James Clear, Atomic Habits" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

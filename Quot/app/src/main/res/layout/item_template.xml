@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item"
+            type="com.izelkayacik.quot.template.Template"/>
+        <variable
+            name="viewModel"
+            type="com.izelkayacik.quot.QuotViewModel"/>
+    </data>
+    
+    <com.google.android.material.card.MaterialCardView
+        layoutId="@{item.layoutId}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/charcoal"
+        viewModel="@{viewModel}">
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

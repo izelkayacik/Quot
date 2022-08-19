@@ -7,8 +7,18 @@
 
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.izelkayacik.quot.InfoFragment"
+        android:name="com.izelkayacik.quot.info.InfoFragment"
         android:label="InfoFragment"
-        tools:layout="@layout/fragment_info"/>
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/actionTemplate"
+            app:destination="@id/templateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/templateFragment"
+        android:name="com.izelkayacik.quot.template.TemplateFragment"
+        android:label="TemplateFragment"
+        tools:layout="@layout/fragment_template"/>
 
 </navigation>

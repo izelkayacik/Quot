@@ -1,4 +1,4 @@
-package com.izelkayacik.quot
+package com.izelkayacik.quot.info
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.izelkayacik.quot.QuotViewModel
 import com.izelkayacik.quot.databinding.FragmentInfoBinding
 
 class InfoFragment: Fragment() {
@@ -21,10 +23,14 @@ class InfoFragment: Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
 
+        setUpNextButton(binding)
+
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
+    private fun setUpNextButton(binding: FragmentInfoBinding) {
+        binding.nextButton.setOnClickListener {
+            findNavController().navigate(InfoFragmentDirections.actionTemplate())
+        }
     }
 }
